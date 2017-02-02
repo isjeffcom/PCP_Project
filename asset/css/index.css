@@ -1,0 +1,132 @@
+/*
+Created by JIANFENG WU
+2017.02.02
+Index style sheet
+*/
+
+
+
+
+.index_gallery{
+  position:relative;
+  width:100%;
+}
+
+.index_gallery_img_container{
+  background-color:#192438;
+  border:none;
+  height:auto;
+  margin:0;
+  overflow: hidden;
+}
+
+.index_gallery_img{
+  position: relative;
+  overflow: hidden;
+
+  float:left;
+  width:50%;
+  height:540px;
+  margin-top:-6px;
+}
+
+
+
+.index_gallery_img img{
+  width:100%;
+  opacity: 0.6;
+  /*timer*/
+  -webkit-transition: all 320ms cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 320ms ease-in-out;
+  transition: all 320ms ease-in-out;
+}
+
+.index_gallery_img img:hover{
+  opacity: 0.1;
+  /*timer*/
+  -webkit-transition: all 420ms cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 420ms ease-in-out;
+  transition: all 420ms ease-in-out;
+
+}
+
+.index_gallery_img a{
+  cursor: pointer !important;
+
+}
+
+
+.gallary_center_title{
+  font-family: "Microsoft YaHei" !important;
+  font-weight:800;
+  width:700px;
+  position:absolute;
+  opacity: 0;
+  top:42%;
+  left:12%;
+  color:#ffffff;
+  font-size:30px;
+  text-align: center;
+  cursor: pointer !important;
+  /*Animation*/
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.gallary_center_title:hover{
+  color: #3da865;
+  /*timer*/
+  -webkit-transition: all 420ms cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 420ms ease-in-out;
+  transition: all 420ms ease-in-out;
+}
+
+.index_gallery_Contorller{
+  position:relative;;
+  width:100%;
+  height:100px;
+  background-color:#1d2b46;
+  color:#ffffff;
+  margin-top: -11px;
+}
+
+.gC{
+  text-align: center;
+  width:50%;
+  height:100px;
+  padding-top:32px;
+  overflow: hidden;
+  opacity: 0.5;
+  cursor: pointer;
+  /*timer*/
+  -webkit-transition: all 220ms cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 220ms ease-in-out;
+  transition: all 220ms ease-in-out;
+}
+
+.gC:hover{
+  opacity: 1;
+  /*timer*/
+  -webkit-transition: all 420ms cubic-bezier(.25,.8,.25,1);
+  -moz-transition: all 420ms ease-in-out;
+  transition: all 420ms ease-in-out;
+}
+
+.gC a{
+  font-size:24px;
+  cursor:pointer;
+}
+
+.gC i{
+  font-size:24px;
+  cursor:pointer;
+}
+
+.gC_left{
+  float:left;
+}
+
+.gC_right{
+  float:right;
+  background-color:#223559 !important;
+}

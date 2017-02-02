@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Animation Test</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="./asset/css/common.css" >
+  <link rel="stylesheet" type="text/css" href="./asset/css/index.css" >
+  <link rel="stylesheet" type="text/css" href="./asset/css/animate.css" >
+  <link rel="stylesheet" type="text/css" href="./asset/css/video.css" >
+      <link rel="stylesheet" type="text/css" href="./asset/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+  <nav>
+    <div class='nav_container' id='nav'>
+
+      <div class='nav nav_logo'>
+        <a class='nav_text_logo'>JIANFENG WU</a>
+        <!--img src='./asset/img/nav_logo.png' alt='site logo'-->
+      </div>
+
+      <div class='nav nav_text'>
+        <a href='#'>CV</a>
+        <a href='#'>PROFESSIONAL</a>
+        <a href='#'>EXPERIENCE</a>
+        <a href='#'>ABOUT ME</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <div class='content'>
+  <div class='index_background'>
+
+
+    <div class='background_video' id='bgvDiv'>
+      <button onclick='stopVideo()'>Close</button>
+      <video id='bgv' width="100%" height="100%">
+        <source src="./asset/video/bgv.mp4" type="video/mp4">
+
+      </video>
+    </div>
+
+    <div class='index_screen_1'>
+      <div class='square square_1'></div>
+      <div class='square square_2'></div>
+      <div class='square square_3'></div>
+      <div class='square square_4'></div>
+      <div class='square square_5'></div>
+
+      <!--div class='wTitle'><a>Loading...</a></div-->
+    </div>
+
+    <!--All element need display add in index screen 2-->
+    <div class='index_screen_2'>
+
+
+        <div class='index_background_img'>
+          <img src='./asset/img/bg3mini.png' alt='background image'>
+        </div>
+
+        <div class='index_background_bigText'>
+          <a>I </a>
+          <a class='bigText_green'>A</a>
+          <a>M</a>
+          <br>
+          <a>JIANFENG</a>
+          <br>
+          <a class='bigText_green'>.</a>
+          <a>WU</a>
+        </div>
+
+        <div class='index_down_angle'>
+          <i class="fa fa-angle-down" aria-hidden="true" onclick='scrollDown()'></i>
+        </div>
+
+      <!--div class='background_ani'>
+        <div class='circle circle_1'></div>
+        <div class='circle circle_2'></div>
+        <div class='circle circle_3'></div>
+        <div class='circle circle_4'></div>
+        <div class='circle circle_5'></div>
+        <div class='circle circle_6'></div>
+        <div class='circle circle_7'></div>
+        <div class='circle circle_8'></div>
+        <div class='circle circle_9'></div>
+        <div class='circle circle_10'></div>
+        <div class='circle circle_11'></div>
+        <div class='circle circle_12'></div>
+      </div-->
+
+      <div class='pLine pLine_1'></div>
+      <div class='pLine pLine_2'></div>
+      <div class='pLine pLine_3'></div>
+      <div class='pLine pLine_4'></div>
+
+      <div class='pImg' id='pImg'><img src='./asset/img/pImg.jpg'></div>
+      <!--div class='pTitle pTitle_top'><a>JEFF's PORTFOLIO</a></div>
+      <div class='pTitle pTitle_sec'><a>work by Jeff</a></div-->
+
+      <div class='index_intro'>
+
+        <div class='pIntro pIntro_brief'>
+          <br>
+          <a>Understand Internet Project from Prototyping to Posting</a>
+          <br>
+          <a>Web / UI designer, Animation Effect Designer, Front-End Developer</a>
+          <br>
+          <a>Photoshop, Premiere Pro, AfterEffect, HTML, CSS, JavaScript, PHP</a>
+        </div>
+
+        <div class='pIntro playVideo'>
+          <button id='playVidBtn' onclick='playVideo()'><i class="fa fa-play" aria-hidden="true"></i></button>
+        </div>
+
+    </div>
+
+  </div>
+
+
+  </div>
+
+    <div class='index_gallery'>
+      <div class='index_gallery_img_container'>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g2.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_1'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_1'>2017前端UED设计及样式开发作业 Web Front-end User Experience Design and Development Coursewrok</a>
+
+        </div>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g3.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_2'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_2'>数据管理设计展示作业 Data Manipulation and Presentation Coursework Design 2017</a>
+        </div>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g1.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_3'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_3'>看见中国App项目 See China App Project (unfinish待续) 2017</a>
+        </div>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g4.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_4'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_4'>移动端应用程序项目 Mobile App Project PPT 2016-2017</a>
+        </div>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g5.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_5'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_5'>中国学联单身趴海报设计 CSSA Single Party Poster Design 2016</a>
+        </div>
+
+        <div class='index_gallery_img'>
+          <img src='./asset/img/gallery/g6.jpg' alt='see china project' onmouseover='showText(this.nextElementSibling.id);coverImg(this.id)' onmouseout='unShowText(this.nextElementSibling.id);unCoverImg(this.id)' id='img_6'>
+          <a href='#' class='gallary_center_title' onmouseover='showText(this.id);coverImg(this.previousElementSibling.id)' onmouseout='unShowText(this.id);unCoverImg(this.previousElementSibling.id)' id='img_text_6'>TCL and HAWK Internship Work Report – TCL通讯实习作品集及工作报告</a>
+        </div>
+
+      </div>
+
+      <div class='index_gallery_Contorller'>
+        <div class='gC gC_left'><i class="fa fa-angle-left" aria-hidden="true"></i><a> Older Post</a></div>
+        <div class='gC gC_right'><a>Newer Post </a><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class='footer_container'>
+
+      <a class='footer_title'>SOCIAL NETWORK</a><br>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+      <i class="fa fa-behance" aria-hidden="true"></i>
+      <br>
+      <br>
+      <a class='footer_info'>Design by JIANFENG WU | Powered by Wordpress</a>
+
+    </div>
+  </footer>
+
+    <script src='./js/prespective.js'></script>
+    <script src='./js/playvideo.js'></script>
+    <script src='./js/common.js'></script>
+
+</body>
+
+</html>
