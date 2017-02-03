@@ -115,7 +115,7 @@
   animation-duration: 1.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 3.6s;
+  animation-delay: 2.1s;
   position: absolute;
   height:100%;
   width:100%;
@@ -217,7 +217,7 @@
   animation-duration: 1.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 3.6s;
+  animation-delay: 2s;
 
   position: absolute;
   margin-left:auto;
@@ -241,7 +241,7 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 2s;
 
 }
 
@@ -259,7 +259,7 @@
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 .index_background_bigText a{
@@ -290,7 +290,7 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 
 .index_down_angle i{
@@ -317,7 +317,7 @@
   animation-name: fadeIn;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  animation-delay: 3.6s;
+  animation-delay: 2.6s;
 }
 
 .circle{
@@ -468,7 +468,7 @@
   animation-duration: 1.4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 2s;
 
   position:absolute;;
   border-bottom: 2px solid #fafafa;
@@ -488,7 +488,7 @@
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 .pLine_2{
@@ -501,7 +501,7 @@
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 .pLine_3{
@@ -514,7 +514,7 @@
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 .pLine_4{
@@ -527,7 +527,7 @@
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 /*Profile Image Start*/
@@ -538,7 +538,7 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 2s;
 
   box-shadow: 0px 0px 30px 0px rgba(93,112,129,0.75);
   width:300px;
@@ -577,7 +577,7 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 .pTitle_top a{
@@ -597,7 +597,7 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 
 .pIntro_title{
@@ -609,7 +609,6 @@
 }
 
 .pIntro_brief a{
-  font-weight:800;
   color:#fff;
   font-size:14px;
 }
