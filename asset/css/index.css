@@ -69,7 +69,7 @@ Index style sheet
   text-align: center;
   cursor: pointer !important;
   /*Animation*/
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
 

@@ -12,8 +12,9 @@
   margin:0;
   padding:0;
   user-select: none;
-  font-family: Quicksand,'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Quicksand,'Helvetica Neue', Helvetica,"Microsoft YaHei", Arial, sans-serif;
 }
+
 a{
   cursor: default;
   text-decoration: none;

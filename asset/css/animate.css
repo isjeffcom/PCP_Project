@@ -96,6 +96,12 @@
 
 }
 
+@keyframes textW2B {
+  0% {background-color: rgba(25,36,56,0.9);}
+  100% {background-color: transparent;}
+
+}
+
 
 .index_background{
   position: relative;
